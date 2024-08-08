@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registraionpage.css">
+</head>
+<body>
+    <nav>
+        <p class="style">THE GARDENER HUB</p>
+        <a href="Home">Home</a>
+    </nav>
+    <div class="Registration">
+        <h1>REGISTRATION FORM</h1>
+        <form action="#">
+            <p>First Name</p>
+            <input type="text"name="First Name" placeholder="First Name">
+            <p>Middile Name</p>
+            <input type="text"name="Middle Name" placeholder="Middle Name">
+            <p>Last Name</p>
+            <input type="text"name="Last Name" placeholder="Last Name">
+            <p>Email</p>
+            <input type="email"name="email" placeholder="Email">
+            <p>Mobile</p>
+            <input type="number"name="number"pattern="\d{10}" maxlength="10"title="Please enter exactly 10 digits" required>
+            <p>Password</p>
+            <input type="password"name="password" pattern="\d{6}" maxlength="6"title="One uppercase and one special character is required" required>
+            <p>Reconform Password</p>
+            <input type="password"name="reconform password" pattern="\d{6}" maxlength="6"title="One uppercase and one special character is required" required>
+            <button type="submit">Submit</button>
+            <button type="Cancle">Cancle</button>
+        </form>
+    </div>
+    
+
+</body>
+</html>
