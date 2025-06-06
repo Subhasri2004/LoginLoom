@@ -5,34 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="registraionpage.css">
+    <script type="module" src="firebaseauth.js"></script>
 </head>
 <body>
     <nav>
-        <p class="style">THE GARDENER HUB</p>
-        <a href="Home">Home</a>
+        <p class="style">LoginLoom</p>
     </nav>
+    <div class="container" id="signup" style="display:none;">
     <div class="Registration">
         <h1>REGISTRATION FORM</h1>
-        <form action="#">
+        <form method="post" action="">
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div> 
             <p>First Name</p>
-            <input type="text"name="First Name" placeholder="First Name">
+            <input type="text"id="fname" name="first_name" placeholder="First Name">
             <p>Middile Name</p>
-            <input type="text"name="Middle Name" placeholder="Middle Name">
+            <input type="text" id="mname" name="middle_name" placeholder="Middle Name">
             <p>Last Name</p>
-            <input type="text"name="Last Name" placeholder="Last Name">
+            <input type="text" id="lname" name="last_name" placeholder="Last Name">
             <p>Email</p>
-            <input type="email"name="email" placeholder="Email">
+            <input type="email" id="remail" name="email" placeholder="Email">
             <p>Mobile</p>
-            <input type="number"name="number"pattern="\d{10}" maxlength="10"title="Please enter exactly 10 digits" required>
+            <input type="number" id="rmobile" name="number"pattern="\d{10}" maxlength="10"title="Please enter exactly 10 digits" required>
             <p>Password</p>
-            <input type="password"name="password" pattern="\d{6}" maxlength="6"title="One uppercase and one special character is required" required>
+            <input type="password" id="rpassword" name="password">
             <p>Reconform Password</p>
-            <input type="password"name="reconform password" pattern="\d{6}" maxlength="6"title="One uppercase and one special character is required" required>
-            <button type="submit">Submit</button>
-            <button type="Cancle">Cancle</button>
+            <input type="password" id="repassword"name="re_password" >
+            <button id="submitSignUp" >Sign Up</button>
+            <button id="signInButton">Sign In</button>
         </form>
     </div>
+    </div>
+
+    <div class="container" id="signIn">
+        <h1 class="form-title">Sign In</h1>
+        <form method="post" action="">
+            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+<p>Email</p>
+              <input type="email"  id="email" placeholder="Email" required>
+              <label for="email">Email</label>
+          
+          <p>Password</p>
+            <input type="password" id="password"  placeholder="Password" required>
+              <label for="password">Password</label>
+              <p class="recover">
+                <a href="#">Recover Password!</a>
+              </p>
+              <button  class="btn"  id="submitSignIn">Sign In</button>
+              <button class="btn" id="signUpButton">Sign Up</button>
+          
+         
+        </form>
+        
+          
+        </div>
+        <script src="script.js"></script>
+    
     
 
 </body>
+
 </html>
